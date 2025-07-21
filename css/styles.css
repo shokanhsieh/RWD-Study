@@ -24,9 +24,9 @@
 @media (min-width: 1024px) {
     /* Desktop: Portrait image with height fitting content area */
     .hero-image {
-        height: 50vw; /* Adjust this value to fit your content area */
+        height: 45vw; /* Adjust this value to fit your content area */
         max-height: 2160px; /* Maximum height limit */
-        width: 37.5vw; /* Let width adjust to maintain aspect ratio */
+        width: 33.75vw; /* Let width adjust to maintain aspect ratio */
     }
 }
 
