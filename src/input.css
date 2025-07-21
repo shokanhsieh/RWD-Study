@@ -1,0 +1,65 @@
+/* Custom styles for the RWD project */
+/* You can add custom CSS here to override or extend Tailwind classes */
+
+@import "tailwindcss";
+
+@theme {
+    --font-mae: "mae-variable", system-ui, sans-serif;
+}
+
+
+/* Custom hero image styling */
+.hero-image {
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* Hero image responsive sizing */
+@media (max-width: 1023px) {
+    /* Mobile: Landscape image with width fitting content area */
+    .hero-image {
+        width: calc(100vw - 2rem); /* Full width minus margin */
+        max-width: calc(100% - 2rem); /* Respect container width */
+        height: calc(75vw-1.5rem);
+        margin: 0 1rem 1rem 1rem; /* Add margin around image */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop: Portrait image with height fitting content area */
+    .hero-image {
+        height: 45vw; /* Adjust this value to fit your content area */
+        max-height: 2160px; /* Maximum height limit */
+        width: 33.75vw; /* Let width adjust to maintain aspect ratio */
+    }
+}
+
+/* Custom button hover effects */
+#submitButton:hover {
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+}
+
+/* Custom dropdown animation */
+#dropdown {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Custom mobile menu animation */
+#mobileMenu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+    .hero-image {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here if needed */
+}
